@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in with Quantum</title>
+
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <img src="assets/icons/header-logo.svg" alt="" class="logo">
+        </div>
+        <div class="body-container">
+            <div class="container">
+                <div class="form-title">
+                    <p class="heading">Log in with Quantum</p>
+                </div>
+                
+                <form class="login-form" action="">
+                    <div class="radio-container form-div-margin-1">
+                        <div class="radio-btn"><input type="radio" name="school-type" value="district"><label for="choice1">District</label></div>
+                        <div class="radio-btn"><input type="radio" name="school-type" value="Independent"><label for="choice2">Independent School</label></div>
+                    </div>
+
+                    <div class="select-field-container form-div-margin-1">
+                        <label for="state">State*</label>
+                        <div class="select-area">
+                            <select name="state" id="state">
+                                <option value="1">Alabama</option>
+                                <option value="2">Baroda</option>
+                                <option value="3">Rajkot</option>
+                                <option value="4">Surat</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="select-field-container form-div-margin-1">
+                        <label for="district">District*</label>
+                        <div class="select-area">
+                            <select name="district" id="district">
+                                <option value="1">Alabama School District</option>
+                                <option value="2">Baroda</option>
+                                <option value="3">Rajkot</option>
+                                <option value="4">Surat</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input-text form-div-margin-2">
+                        <input type="text" name="userfield" id="userfield" placeholder="Username/Email ID*">
+                    </div>
+                    <p class="forgot-text">forgot username?</p>
+
+                    <div class="input-text pwd-field form-div-margin-1">
+                        <input type="password" name="password" id="password" placeholder="Password*">
+                    </div>
+                    <p class="forgot-text">forgot password?</p>
+
+                    <div class="check-field form-div-margin-1">
+                        <input type="checkbox" name="remember-me" id="remember-me"><label for="remember-me">Remember Me</label>
+                    </div>
+
+                    <div class="login-btn form-div-margin-1">
+                        <input type="submit" name="login" value="LOG IN">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="company-links">
+                <a href="#">About</a> 
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="creadit-footer">
+                <img src="assets/icons/footer-logo.svg" alt="" class="footer_logo"> <span class="credit-text">Copyright © 2020 - 2021  <span class="company-name">Zeus Systems Pvt. Ltd.</span> All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url(Quicksand_font_1/Quicksand-VariableFont_wght.ttf);
+}
+
+html, body{
+    margin: 0;
+    font-family: 'Quicksand';
+    background-color: #EEEEEE;
+    height: 100%;
+}
+
+.main-container{
+    height: 100%;
+}
+
+/* ======================================================= Login Page Start ======================================================= */
+
+/* Header Css */
+.header{
+    padding: 11px 24px;
+    background-color: #25313F;
+    position: relative;
+    border-bottom: 3px solid #31B9E4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    background: transparent url("header_pattern_svg.svg") repeat;
+    mix-blend-mode: overlay;
+}
+
+.body-container{
+    padding: 54px 0;
+    height: 100%;
+}
+
+/* Content-css */
+.container{
+    background-color: #FFFFFF;
+    padding: 20px 32px;
+    width: 488px;  
+    margin: auto auto;
+    border-top: 4px solid #3AC7EC;
+    border-radius: 4px;
+}
+
+.form-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.heading{
+    color: #222222;
+    margin: 0;
+}
+
+.form-title::before{
+    position: absolute;
+    content:url("icons/back.svg");
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.radio-container{
+    font-size: 16px;
+    display: flex;
+}
+
+.radio-container > .radio-btn:nth-child(2){
+    margin-left: 32px;
+}
+
+.radio-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.radio-btn input{
+    position: absolute;
+    visibility: hidden;
+}
+
+.radio-btn label{
+    margin-left: 28px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+}
+
+.radio-btn:nth-child(1)::before{
+    position: absolute;
+    content: url("icons/radio-button-on.svg");
+    height: 24px;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.radio-btn:nth-child(2)::before{
+    position: absolute;
+    content: url("icons/radio-button-off.svg");
+    height: 24px;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.form-div-margin-1{
+    margin-top: 24px;   
+}
+
+.form-div-margin-2{
+    margin-top: 56px;
+}
+
+.select-field-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.select-field-container label{
+    color: #666666;
+    font-size: 12px;
+} 
+
+.select-field-container select, .input-text input{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    font-size: 16px;
+    color: #222222;
+    font-family: 'Quicksand';
+    width: 100%;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+    position: relative;
+    padding: 5px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-area{
+    position: relative;
+}
+
+.select-area::after{
+    position: absolute;
+    content: url("icons/arrow-down.svg");
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.forgot-text{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #1F7A54;
+    margin: 0;
+}
+
+.input-text{
+    position: relative;
+}
+
+.pwd-field::before{
+    position: absolute;
+    content: url("icons/preview.svg");
+    right: 0;
+}
+
+.check-field{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.check-field input{
+    visibility: hidden;
+    position: absolute;
+}
+
+.check-field label{
+    margin-left: 24px;
+    font-size: 16px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+}
+
+.check-field::before{
+    position: absolute;
+    content: url("icons/checkbox-checked.svg");
+    width: 18px;
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.login-btn{
+    margin-top: 34px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.login-btn input{
+    border: none;
+    outline: none;
+    background-color: #3FD28B;
+    font-family: 'Quicksand';
+    color: #1F2834;
+    padding: 11px 85px;
+    box-shadow: 0px 3px 5px #0000003D;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+}
+
+/* Footer Css */
+.company-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.company-links a{
+    padding: 0 9px;
+    text-decoration: none;
+    color: #1F7A54;
+    font-size: 14px;
+}
+
+.company-links a:nth-child(1){
+    border-right: 1px solid #0000001F;
+}
+
+.creadit-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 0;
+    background-color: #E0E1E1;
+}
+
+.creadit-footer img{
+    padding: 0 16px;
+    border-right: 1px solid #0000001F;
+}
+
+.credit-text{
+    font-size: 12px;
+    padding: 0 16px;
+}
+
+.company-name{
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* ======================================================= Login Page End ======================================================= */
+
+/* ======================================================= Dashboard Page Start ======================================================= */
+.navbar{
+    float: right;
+    margin: 0;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-list .nav-item{
+    display: inline;
+    margin-right: 32px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav-list .nav-item a{
+    text-decoration: none;
+    color: #3FD28B;
+    font-size: 16px;
+    position: relative;
+}
+
+.profile-logo{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #3FD28B;
+}
+
+.nav-item:nth-child(1) a{
+    color: #FFFFFF;
+}
+
+.nav-item:nth-child(1)::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #FFFFFF;
+    top: 36px;
+}
+
+.notification{
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #2A7FF3;
+    font-size: 12px;
+    padding: 0px 5px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+}
+
+.body-container-2{
+    padding: 24px;
+}
+
+.nav-tabs{
+    width: 100%;
+    background-color: #8DDC97;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+    border-radius: 4px;
+}
+
+.tab-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #222222;
+    position: relative;
+}
+
+.tab-item:nth-child(1)::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: #222222;
+    bottom: -18px;
+    border-radius: 2px;
+}
+
+.tab-item img, .tab-item .digit{
+    margin-right: 8px;
+}
+
+.digit{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.course-numeric-row{
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 0 0 16px 0;
+}
+
+.showing-course, .sort-course{
+    width: 100%;
+    font-size: 14px;
+}
+
+.sort-course{
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sort-course select{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    font-size: 16px;
+    color: #222222;
+    width: 100%;
+    width: 165px;
+    font-family: 'Quicksand';
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+    position: relative;
+    padding: 5px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.course-area-selection{
+    margin-left: 6px;
+    margin-right: 24px;
+}
+
+
+.sort-course select::after{
+    position: absolute;
+    content: url("icons/arrow-down.svg");
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.courses-container{
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px 25px;
+}
+
+.course-item{
+    background-color: #FFFFFF;
+    padding: 24px;
+}
+
+.course-item-content{
+    display: flex;
+    align-items: center;
+}
+
+.course-item-text{
+    padding: 0 16px;
+    color: #666666;
+    width: 100%;
+}
+
+.course-item-text .course-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.course-item-text .subject-grade{
+    font-size: 12px;
+    color: #666666;
+}
+
+.course-item-text .pos-digit{
+    color: #1F7A54;
+}
+
+.course-item-text .course-digit{
+    font-weight: bold;
+    color: #222222;
+}
+
+.course-item-text select{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    font-size: 16px;
+    color: #222222;
+    width: 100%;
+    font-family: 'Quicksand';
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700;
+    position: relative;
+    padding: 5px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.classes-select-area{
+    position: relative;
+}
+
+.course-item-text .classes-select-area::after{
+    position: absolute;
+    content: url("icons/arrow-down.svg");
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}

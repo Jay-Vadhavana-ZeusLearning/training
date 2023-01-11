@@ -1,0 +1,41 @@
+body{
+    background-color:moccasin;
+    padding: 0 10px;
+}
+
+.title{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    border-bottom: 10px solid crimson;
+    letter-spacing: 13px;
+    font-style: italic;
+}
+
+.subtitle{
+    background-color:limegreen;
+    color: white;
+    padding-left: 15px;
+}
+
+.span-text{
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.list{
+    color: crimson;
+}
+
+.img-container{
+    width: 100px;
+    border: 1px dashed #777;
+}
+
+.subtitle-2{
+    color: #999;
+}
+
+table{
+    background-color: #888;
+}
