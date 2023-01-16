@@ -1,0 +1,10 @@
+$primaryBtn : rgb(56, 146, 142);
+$textColor: rgb(58, 57, 57);
+
+@import './header';
+
+.contact{
+   @extend header;
+   background-color: honeydew;
+}
+
